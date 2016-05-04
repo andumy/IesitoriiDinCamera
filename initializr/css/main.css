@@ -3,166 +3,165 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-*{
-    padding: 0;
-    margin: 0px;
+html, body{
+    height:100%;
 }
-
-.background-img{
-    
-    text-align: center;
-    position: absolute;
-    width:100%;
-    height: 100%;
-}
-
-.navbar{
+@media all and (min-width:769px)
+{
+    .navbar-inverse{
+    background-image: none;
     background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-    
-    
+    border-color: transparent;    
+    }
+}
+a,a:link,a:visited{
+    color:#888888;
+    text-decoration: none;
+}
+a:hover,a:active{
+    text-decoration: underline;
+    color:white;
+}
+.homepage{
+    background-image: url(../img/background.jpg);
+    background-size: 100% auto;
 }
 
-.menu{
+.navbar-brand{
+    padding: 6px;
+    font-family: "Perfect Dark (BRK)",Arial,sans-serif;
+    font-size: 5px;
+
+     
+}
+.logo{
+    width: 60px;
+    height: 60px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
-.link{
-    font-family: "Roboto light";
-    display: inline-block;
-    padding:20px;
-    margin-top: 10px;
+.navbar-nav li{
+    font-family: "Roboto Light",Arial,sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display:inline-block;
     
 }
-
-
-.logo {
-    float: left;
-    padding: 17px;
-    margin-left: 3px
-}
-
-.container {
-    float:none;
-    width:50%;
-    text-align: center
-}
-.lets-talk{
-    font-family: "Roboto light";
-    margin: 15px;
-    margin-right: 20px;
-    float: right;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
-    color: white;
-    width:130px;
-    height:50px;
-    border: 1px solid #FFFFFF;
+.button-chat{
+     font-family: "Roboto Light",Arial,sans-serif;
+    font-size: 15px;
+    border: 1px solid white;
     background-color: rgba(67,67,67,0.5);
+    color:white;
+    width:160px;
+    height: 50px;
+    line-height: 30px;
+    margin-bottom: -10px;
+    text-align: center;
+    padding: 10px;
+    margin-top:0px;
+    
+}
+@media all and (max-width:991px)
+{
+    .button-chat{
+         font-family: "Roboto Light",Arial,sans-serif;
+        font-size: 15px;
+        border: 1px solid white;
+        background-color: rgba(67,67,67,0.5);
+        color:white;
+        width:140px;
+        height: 50px;
+        line-height: 30px;
+        margin-bottom: -10px;
+        text-align: center;
+        padding: 10px;
+        margin-top:0px;
+
+    }    
+}
+@media all and (max-width:768px)
+{
+    .button-chat{
+    font-family: "Roboto Light",Arial,sans-serif;
+    background-color: transparent;
+    font-size: 15px;
+    }    
 }
 
-.navbar-header{
-    margin-top: 15px;
-    
+.navbar-toggle{
+    padding:10px;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
-.buttons{
-    margin-top: 200px;
-    width: 1366px;
-    height: 355px;
-    position: absolute;
-    display: inline-block;
+.navbar-collapse{
+    padding: 20px;
+    align-content: center;
+    margin-top: 0px;
+    border-top: 0px solid transparent;
 }
-.buttons-squares{
-    margin-left:250px;
-    margin-top: 235px;
-    width: 886px;
-    height: 220px;
-    position: absolute;
-    display: inline-block;
+.navbar{
+    min-height:70px;
 }
-.left-button{
-    float: left;
-    margin-top: 45px;
-    margin-left: -45px;
-    font-family: "Roboto light";
-    font-size: 4;
-    text-align: center;
-    line-height: 50px;
-    transform: rotate(90deg);
+
+@media all and (max-width:768px)
+{
+    .navbar .navbar-nav{
+        float none;
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 20%;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: transparent;
+    }
+    .navbar-header{
+        margin-bottom: 25px;
+    }
+}
+
+.main-rectangle{
     position: relative;
-    color: white;
-    background-color: rgba(63,63,63,1); 
-    width:140px;
-    height: 50px;
-   
-}
-.right-button{
-    float: right;
-    margin-top: 45px;
-    margin-right:-45px;
-    font-family: "Roboto light";
-    font-size: 4;
-    text-align: center;
-    line-height: 50px;
-    transform: rotate(-90deg);
-    position: relative;
-    color: white;
-    background-color: rgba(63,63,63,1); 
-    width:140px;
-    height: 50px;
-   
-}
-.middle-button{
-    margin-left:613px;
-    margin-right: 613px;
-    text-align: center;
-    line-height: 50px;
-    margin-top: 305px;
-    font-family: "Roboto light";
-    font-size: 4;
-    text-align: center;
-    position: relative;
-    color: white;
-    background-color: rgba(63,63,63,1); 
-    width:140px;
-    height: 50px;
-   
-}
-.square-left{
-    font-size: 25px;
-    color:white;
-    text-align: center;
-    line-height: 37px;
-    float:left;
-    position: absolute;
-    border: 1px solid #FFFFFF;
-    width:40px;
-    height:40px;
+    height: 100%;
+    margin:15px 0px;
+    margin-bottom:50px;
+    background-color: rgba(67,67,67,0.5);
+    left:1.5%;
+    width:97%;
+    padding-bottom: 43.3%;
+    box-shadow:2px 2px 10px 10px black;
+    -webkit-box-shadow:2px 2px 10px 10px black;
+    -moz-box-shadow:2px 2px 10px 10px black;
+    /* For IE<9 */  
+  filter:
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=0,strength=5),
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=45,strength=2),
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=90,strength=5),
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=135,strength=5),
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=180,strength=10),
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=225,strength=5),
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=270,strength=5),
+  progid:DXImageTransform.Microsoft.Shadow(color=black,direction=315,strength=2);
     
 }
-.square-right{
-   font-size: 25px;
-    color:white;
-    text-align: center;
-    line-height: 37px;
-    margin-left: 846px;
+
+.pink-rectangle{
     position: absolute;
-    border: 1px solid #FFFFFF;
-    width:40px;
-    height:40px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30%;
+    width:30%;
+    padding-bottom: 15%;
+    border: 15px solid #f366f6;
+}
+.iesitorii-din-camera{
     
 }
-.square-bot{
-  font-size: 25px;
-    color:white;
-    text-align: center;
-    line-height: 37px;
-    margin-top:180px;
-    margin-left: 423px;
-    position: absolute;
-    border: 1px solid #FFFFFF;
-    width:40px;
-    height:40px;
-    
-}
+
+
+
+
