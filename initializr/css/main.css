@@ -147,7 +147,6 @@ a:hover,a:active{
   progid:DXImageTransform.Microsoft.Shadow(color=black,direction=315,strength=2);
     
 }
-
 .pink-rectangle{
     position: absolute;
     top: 50%; 
@@ -156,12 +155,207 @@ a:hover,a:active{
     height: 30%;
     width:30%;
     padding-bottom: 15%;
-    border: 15px solid #f366f6;
+    border: 10px solid #f366f6;
+    text-align: center;
 }
+
+
 .iesitorii-din-camera{
+
+    color: white; 
+    line-height: 50px;
+    position: absolute;
+    top: 48%; 
+    left: 49%;
+    transform: translate(-50%,-50%);
+    text-align: center;
     
 }
 
+.iesitorii-din-camera img{
+    z-index: 2px;
+    width:75%;
+    height: auto;
+}
+.button-left{
+    font-family: "Roboto Light",Arial,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    transform: rotate(-90deg);
+    margin-left: -55px;
+    margin-top:20%;  
+    width:160px;
+    height: 50px;
+    background-color: #434343;
+    
+}
+.button-left span{
+    font-size: 27px;
+    display: inline-block;
+}
+.button-right{
+    position: absolute;
+    right: 0px;
+    margin-right: -55px;
+    font-family: "Roboto Light",Arial,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    transform: rotate(90deg);
+    margin-top:20%;  
+    width:160px;
+    height: 50px;
+    background-color: #434343;
+    
+}
+.button-right span{
+    font-size: 27px;
+    display: inline-block;
+}
+@media all and (max-width:468px)
+{
+    
+            .pink-rectangle{
+                position: absolute;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: 45%;
+                width:35%;
+                padding-bottom: 15%;
+                border: 5px solid #f366f6;
+                text-align: center;
+            }
 
 
+            .iesitorii-din-camera{
 
+                color: white; 
+                line-height: 50px;
+                position: absolute;
+                top: 49%; 
+                left: 49%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+
+            }
+
+            .iesitorii-din-camera img{
+                z-index: 2px;
+                width:100%;
+                height: auto;
+            }
+            .button-left{
+                font-family: "Roboto Light",Arial,sans-serif;
+                font-size: 13px;
+                text-align: center;
+                line-height: 51px;
+                position: fixed;
+                transform: rotate(-90deg);
+                margin-left: -45px;
+                margin-top:20%;  
+                width:120px;
+                height: 30px;
+                background-color: #434343;
+
+            }
+            .button-right{
+                position: absolute;
+                right: 0px;
+                margin-right: -45px;
+                font-family: "Roboto Light",Arial,sans-serif;
+                font-size: 13px;
+                text-align: center;
+                line-height: 51px;
+                position: fixed;
+                transform: rotate(90deg);
+                margin-top:20%;  
+                width:120px;
+                height: 30px;
+                background-color: #434343;
+
+            }
+            .button-right span{
+            font-size: 16px;
+            display: inline-block;
+            }
+            .button-left span{
+            font-size: 16px;
+            display: inline-block;
+            }
+}
+@media all and (max-width:768px)
+{
+    
+            .pink-rectangle{
+                position: absolute;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: 45%;
+                width:35%;
+                padding-bottom: 15%;
+                border: 5px solid #f366f6;
+                text-align: center;
+            }
+
+
+            .iesitorii-din-camera{
+
+                color: white; 
+                line-height: 50px;
+                position: absolute;
+                top: 49%; 
+                left: 49%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+
+            }
+
+            .iesitorii-din-camera img{
+                z-index: 2px;
+                width:100%;
+                height: auto;
+            }
+            .button-left{
+                font-family: "Roboto Light",Arial,sans-serif;
+                font-size: 14px;
+                text-align: center;
+                line-height: 51px;
+                position: fixed;
+                transform: rotate(-90deg);
+                margin-left: -45px;
+                margin-top:20%;  
+                width:130px;
+                height: 50px;
+                background-color: #434343;
+
+            }
+            .button-right{
+                position: absolute;
+                right: 0px;
+                margin-right: -45px;
+                font-family: "Roboto Light",Arial,sans-serif;
+                font-size: 14px;
+                text-align: center;
+                line-height: 51px;
+                position: fixed;
+                transform: rotate(90deg);
+                margin-top:20%;  
+                width:130px;
+                height: 50px;
+                background-color: #434343;
+
+            }
+            .button-right span{
+            font-size: 27px;
+            display: inline-block;
+            }
+            .button-left span{
+            font-size: 27px;
+            display: inline-block;
+            }
+}
