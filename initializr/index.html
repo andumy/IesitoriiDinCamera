@@ -20,6 +20,31 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+         <script src="js/jquery-1.12.3.js"></script>
+        <script>
+            $(function(){
+                    $(document).on('click', 'a[href^="#"]', function(e) {
+                        // target element id
+                        var id = $(this).attr('href');
+
+                        // target element
+                        var $id = $(id);
+                        if ($id.length === 0) {
+                            return;
+                        }
+
+                        // prevent standard hash navigation (avoid blinking in IE)
+                        e.preventDefault();
+
+                        // top position relative to the document
+                        var pos = $(id).offset().top;
+
+                        // animated top scrolling
+                        $('body, html').animate({scrollTop: pos});
+                    });
+                
+            });
+        </script>
     <div class="homepage">    
     <nav class="navbar navbar-inverse " role="navigation">
       <div class="container">
@@ -78,7 +103,7 @@
                             </div>
                         </a>
                         <a href="#about-us">
-                            <div class="about-us-button" id="button">
+                            <div class="about-us-button" >
                                 ABOUT US
                             </div>
                         </a>
@@ -96,11 +121,11 @@
             </a>
         </div>  
       </div>   
-    <div class="bg-image">
+    <div class="bg-image" id="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-us" id="about-us">
+                    <div class="about-us" >
                         <p>
                             ABOUT US 
                         </p>

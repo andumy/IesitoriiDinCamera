@@ -215,6 +215,7 @@ a:hover,a:active{
     height: auto;
 }
 .button-left{
+    z-index: 9000;
     font-family: "Roboto Light",Arial,sans-serif;
     font-size: 17px;
     text-align: center;
@@ -230,6 +231,7 @@ a:hover,a:active{
 }
 
 .button-right{
+    z-index: 9000;
     position: absolute;
     right: 0px;
     margin-right: -55px;
@@ -367,13 +369,12 @@ a:hover,a:active{
             
 }
 .bg-image{
-    margin-top:5%;
-    padding-bottom: 3%;
+    margin-top:6%;
+    padding-bottom: 7%;
     background-color: rgba(67,67,67,0.6);
 }
 .about-us{
     margin: 3%;
-    
     font-family: "Roboto Light",Arial,sans-serif;
     font-size: 30px;
     color:white;
