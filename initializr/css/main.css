@@ -396,3 +396,27 @@ a:hover,a:active{
     width:45%;
     height: auto;
 }
+.what-we-do-title{
+     font-family: "Roboto Bold",Arial,sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.what-we-do{
+    font-family: "Roboto Bold",Arial,sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    color:white;
+}
+.what-we-do i{
+    
+    font-size: 130px
+}
+.what-we-do p{
+    margin-top: 10px;
+    font-size: 30px
+}
+.what-we-do span{
+    
+    font-size: 14px;
+}
