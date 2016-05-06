@@ -20,33 +20,8 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-         <script src="js/jquery-1.12.3.js"></script>
-        <script>
-            $(function(){
-                    $(document).on('click', 'a[href^="#"]', function(e) {
-                        // target element id
-                        var id = $(this).attr('href');
-
-                        // target element
-                        var $id = $(id);
-                        if ($id.length === 0) {
-                            return;
-                        }
-
-                        // prevent standard hash navigation (avoid blinking in IE)
-                        e.preventDefault();
-
-                        // top position relative to the document
-                        var pos = $(id).offset().top;
-
-                        // animated top scrolling
-                        $('body, html').animate({scrollTop: pos});
-                    });
-                
-            });
-        </script>
-    <div class="homepage">    
-    <nav class="navbar navbar-inverse " role="navigation">
+    <div class="homepage" id="home">    
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
           
         <div class="navbar-header">
@@ -63,9 +38,8 @@
           
         <div id="navbar" class="navbar-collapse collapse">
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-3">
+                <div class="col-sm-10 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-3">
                     <ul class="navbar-nav nav">
-                        <a href="#"><li class="active">HOME</li></a>
                         <a href="#what-we-do"><li>WHAT WE DO</li></a>
                         <a href="#"><li>REVIEWS</li></a>
                         <a href="#"><li>OUR SCORES</li></a>
@@ -87,7 +61,7 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     
-      <div class="container-fluid">
+      <div class="container-fluid pad-top">
         <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12" >
                     <div class="main-rectangle">
@@ -119,8 +93,15 @@
                    TOP TIMES
                </div> 
             </a>
+            <a href="#home">
+               <div class="button-up xs-hidden">
+                   <i class="fa  fa-long-arrow-up" aria-hidden="true"></i>
+               </div> 
+            </a>
         </div>  
       </div>   
+    </div>
+    <div class="middle-image">
     <div class="bg-image" id="about-us">
         <div class="container">
             <div class="row">
@@ -206,7 +187,7 @@
             <div class="row">
                <div class="col-xs-12">
                    <div class="what-we-do-title" id="what-we-do">
-                       WHAT WE DO
+                      WHAT WE DO ?
                    </div>
                </div>
                
@@ -257,6 +238,49 @@
             </div>
         </div>
     </div>    
+    <script src="js/jquery-1.12.3.js"></script>
+        <script>
+            $(function(){
+                
+                // scroll script-------------------------------------------------------------------------
+                
+                    $(document).on('click', 'a[href^="#"]', function(e) {
+                        // target element id
+                        var id = $(this).attr('href');
+
+                        // target element
+                        var $id = $(id);
+                        if ($id.length === 0) {
+                            return;
+                        }
+
+                        // prevent standard hash navigation (avoid blinking in IE)
+                        e.preventDefault();
+
+                        // top position relative to the document
+                        var pos = $(id).offset().top;
+
+                        // animated top scrolling
+                        $('body, html').animate({scrollTop: pos});
+                    });
+                
+                // navbarchange script------------------------------------------------------------------------- 
+                       
+                          $(window).scroll(function() { // check if scroll event happened
+                                var transp = parseInt($(document).scrollTop())/300;
+                              $(".navbar-fixed-top").css("background-color", 'rgba(0,0,0,'+transp+')'); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                            if($(document).scrollTop() > 10){
+                              $(".button-up").css("visibility","visible");
+                              $(".button-up").css("background-color", 'rgba(67,67,67,'+transp+')');  
+                            }
+                              else{
+                                $(".button-up").css("visibility","hidden");  
+                              }
+                          });
+                        
+                
+            });
+        </script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

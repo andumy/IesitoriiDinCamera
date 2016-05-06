@@ -6,7 +6,7 @@
 html, body{
     height:100%;
 }
-@media all and (min-width:769px)
+@media all and (min-width:768px)
 {
     .navbar-inverse{
     background-image: none;
@@ -23,10 +23,15 @@ a:hover,a:active{
     color:white;
 }
 .homepage{
-    background-image: url(../img/background.jpg);
-    background-size: 100% auto;
+    background-image: url(../img/bg-initlable.jpg);
+    background-size: 100% 100%
 }
-
+.middle-image{
+    background-image: url(../img/bg-fade.jpg);
+}
+.navbar-fixed-top{
+    height: 95px;
+}
 .navbar-brand{
     padding: 6px;
     font-family: "Perfect Dark (BRK)",Arial,sans-serif;
@@ -122,6 +127,10 @@ a:hover,a:active{
         margin-bottom: 25px;
     }
 }
+.pad-top{
+    padding-top: 80px;
+}
+
 .down-rectangle{
     position: absolute;
     left:0;
@@ -229,7 +238,21 @@ a:hover,a:active{
     background-color: #434343;
     
 }
-
+.button-up{
+    visibility:hidden;
+    z-index: 9000;
+    font-family: "Roboto Light",Arial,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right:30px;
+    bottom: 30px;
+    width:50px;
+    height: 50px;
+    background-color: #434343;
+    
+}
 .button-right{
     z-index: 9000;
     position: absolute;
@@ -369,12 +392,13 @@ a:hover,a:active{
             
 }
 .bg-image{
-    margin-top:6%;
     padding-bottom: 7%;
-    background-color: rgba(67,67,67,0.6);
+    
 }
+
 .about-us{
     margin: 3%;
+    margin-top: 95px;
     font-family: "Roboto Light",Arial,sans-serif;
     font-size: 30px;
     color:white;
@@ -398,13 +422,14 @@ a:hover,a:active{
     height: auto;
 }
 .what-we-do-title{
-     font-family: "Roboto Bold",Arial,sans-serif;
+     font-family: "Roboto Light",Arial,sans-serif;
     font-size: 30px;
-    margin-top: 40px;
+    color:white;
+    margin-top: 95px;
     margin-bottom: 40px;
 }
 .what-we-do{
-    font-family: "Roboto Bold",Arial,sans-serif;
+    font-family: "Roboto Light",Arial,sans-serif;
     margin-top: 30px;
     text-align: center;
     color:white;
@@ -415,9 +440,10 @@ a:hover,a:active{
 }
 .what-we-do p{
     margin-top: 10px;
-    font-size: 30px
+     font-family: "Roboto Bold",Arial,sans-serif;
+    color:white;
+    font-size: 25px
 }
 .what-we-do span{
-    
     font-size: 14px;
 }
